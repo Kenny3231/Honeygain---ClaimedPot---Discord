@@ -7,7 +7,7 @@ import os
 EMAIL = os.getenv('EMAIL')
 PASSWORD = os.getenv('PASSWORD')
 URL = os.getenv('URL')
-ID = os.getenv('ID', default="NULL"))
+ID = os.getenv('ID', default="NULL")
 
 if ID != "NULL" :
     webhook = DiscordWebhook(url=URL, id=ID)
