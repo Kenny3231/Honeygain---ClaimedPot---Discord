@@ -71,7 +71,6 @@ embed.add_embed_field(name="Total", value=Total, inline=True)
 embed.add_embed_field(name="Balance du jour", value=Balance, inline=True)
 embed.add_embed_field(name="Bonus", value=Claimed, inline=True)
 webhook.add_embed(embed)
-webhook.edit()
 
 if ID != "NULL" :
     webhook.edit()
