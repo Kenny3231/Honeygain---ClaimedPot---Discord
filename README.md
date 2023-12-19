@@ -1,15 +1,18 @@
-# honeygain-claim-honeypot
-Automatically claim the daily honeypot  
-There is a crontab that will run the included python script at 1pm.
+# honeygain---ClaimPot-Discord
+Réclame automatiquement le pot
+Lancement du script à 13H tous les jours
 
 ## Environment Variables
 
-|Name    |Value        |Optional|
+|Nom     |Valeur       |Optional|
 |--------|-------------|--------|
-|EMAIL   |Your token   |No      |
-|PASSWORD|Your password|No      |
+|EMAIL   |Your email   |Non     |
+|PASSWORD|Your password|Non     |
+|URL     |URL WEBHOOK  |Non     |
+|ID      |ID MESSAGE   |Oui     |
 
 ## Example
 docker run --name honeygain-claim-honeypot -d  -e EMAIL=<-!your email!-> -e PASSWORD=<-!your password!-> arnesteinbach/honeygain-claim-honeypot
 
+Je me suis aider du github:
 [https://hub.docker.com/r/arnesteinbach/honeygain-claim-honeypot](https://hub.docker.com/r/arnesteinbach/honeygain-claim-honeypot)
