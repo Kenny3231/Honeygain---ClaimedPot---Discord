@@ -14,8 +14,7 @@ if ID != "" :
 else :
     webhook = DiscordWebhook(url=URL)
 
-#CACHED_TOKEN_PATH = '/root/.jwt-token'
-CACHED_TOKEN_PATH = 'C:\Sauvegarde Syno\Projets\HoneyGain\honeygain-honeypot-main\honeygain-honeypot-main\.jwt-token'
+CACHED_TOKEN_PATH = '/root/.jwt-token'
 
 #Function Login
 def login():
