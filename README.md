@@ -14,5 +14,5 @@ Lancement du script à 13H tous les jours
 ## Example
 docker run --name honeygain-claim-honeypot -d  -e EMAIL=<-!your email!-> -e PASSWORD=<-!your password!-> arnesteinbach/honeygain-claim-honeypot
 
-Je me suis aider du github:
+J'ai reprise et améliorer le github:
 [https://hub.docker.com/r/arnesteinbach/honeygain-claim-honeypot](https://hub.docker.com/r/arnesteinbach/honeygain-claim-honeypot)
