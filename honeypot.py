@@ -7,9 +7,9 @@ import os
 EMAIL = os.getenv('EMAIL')
 PASSWORD = os.getenv('PASSWORD')
 URL = os.getenv('URL')
-ID = os.getenv('ID')
+ID = os.getenv('ID', default="NULL"))
 
-if ID != "" :
+if ID != "NULL" :
     webhook = DiscordWebhook(url=URL, id=ID)
 else :
     webhook = DiscordWebhook(url=URL)
@@ -73,7 +73,7 @@ embed.add_embed_field(name="Bonus", value=Claimed, inline=True)
 webhook.add_embed(embed)
 webhook.edit()
 
-if ID != "" :
+if ID != "NULL" :
     webhook.edit()
 else :
     webhook.execute()
